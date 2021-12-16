@@ -1,236 +1,163 @@
 /* navigation Bar*/
-*{
-    padding:0;
-    margin:0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-    
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
-body{
-    font-family: fantasy;
+body {
+  font-family: fantasy;
 }
-nav{
-    background:#cb99c9;
-    height:80px;
-    width:100%;
+nav {
+  background: #cb99c9;
+  height: 80px;
+  width: 100%;
 }
-label.logo{
-  color:white;
+label.logo {
+  color: #310a6c;
   font-size: 35px;
-  outline:height 80px;
+  outline: height 80px;
   padding: 0 100px;
-  font-weight:bold;
+  font-weight: bold;
 }
 
-nav ul{
-    float:right;
-    margin-right:20px;
+nav ul {
+  float: right;
+  margin-right: 20px;
 }
-nav ul li{
-    display:inline-block;
-    line-height: 80px;
-   margin: 0 5px;
-
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
 }
-nav ul li a{
-    color:white;
-    font-size:17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform:uppercase;
+nav ul li a {
+  color: #310a6c;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
 }
-a.active,a:hover{
-    background:#a76bcf;
-    transition: .5s;
+a.active,
+a:hover {
+  background: #a76bcf;
+  transition: 0.5s;
 }
-.checkbtn{
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40 px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+@media (max-width: 925px) {
+  label.logo {
     font-size: 30px;
-    color:white;
-    float:right;
-    line-height: 80px;
-    margin-right: 40 px;
-    cursor:pointer;
-    display: none;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
 }
-#check{
-    display: none;
-
-}
-@media(max-width:925px){
-     label.logo{
-         font-size: 30px;
-         padding-left:50px ;
-     }
-     nav ul li a{
-         font-size: 16px;
-     }
-}   
-@media (max-width:858px){
-    .checkbtn{
-        display:block
-    }
-    ul{
-        position:fixed;
-        width:100%;
-        height:100vh;
-        background:#800080;
-        top:80px;
-        left: -100%;
-        text-align: center;
-        transition:all.5s;
-     }
-nav ul li{
-    display:block;
-    margin:50px 0;
-    line-height:30px;
-    }
-nav ul li a{
-    font-size: 20px;
-
-    }
-    a:hover,a.active{
-        background:none;
-        color:#0082e6
-    }
-    #check:checked~ul{
-        left:0;
-    }
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
   }
-  /*slides*/  
-  * {box-sizing:border-box}
-
-  /* Slideshow container */
-  .slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-    height: 100vh;
-  }
-  
-  /* Hide the images by default */
-  .mySlides {
-    display: none;
-  }
-  .item1{
-    background-image: url("https://i.postimg.cc/DzjKqvS6/bts2.jpg");
-  }
-  .item2{
-    background-image: url("bts\ 5.jpeg");
-  }
-  .item3{
-    background-image: url("bt21.jpeg");
-  }
-  .item4{
-    background-image: url("bts\ 5.jpeg");
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  
-  /* Caption text */
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
+  ul {
+    position: fixed;
     width: 100%;
+    height: 100vh;
+    background: #800080;
+    top: 80px;
+    left: -100%;
     text-align: center;
+    transition: all.5s;
   }
-  
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
   }
-  
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+  nav ul li a {
+    font-size: 20px;
   }
-  
-  .active, .dot:hover {
-    background-color: #717171;
+  a:hover,
+  a.active {
+    background: none;
+    color: #0082e6;
   }
-  
-  /* Fading animation */
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
+  #check:checked ~ ul {
+    left: 0;
   }
-  
-  @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
+}
+/* The hero image */
+.hero-image {
+  background-image: url("https://i.pinimg.com/originals/e4/23/93/e423939ed47b587e3fc0f15db60eadea.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
 
 /*footer*/
-   footer{
-    background-color: #DDA0DD;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    align-content: flex-start;
-    border-top: solid 5px #DDA0DD;
-    padding: 5px;
-    color: #000;
-    font-size: 1.2em;
-    bottom: 0;
-    width: 100%;
-  }
-  footer p {
-    padding-left: 5.7vw;
-  }
-  footer img {
-    max-width: 75px;
-    margin: 5px;
-  }
-  
-  footer section img {
-    max-width: 50px;
-    margin: 5px;
-  }
+footer {
+  background-color: #dda0dd;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  border-top: solid 5px #dda0dd;
+  padding: 5px;
+  color: #000;
+  font-size: 1.2em;
+  bottom: 0;
+  width: 100%;
+}
+footer p {
+  padding-left: 5.7vw;
+}
+footer img {
+  max-width: 75px;
+  margin: 5px;
+}
+
+footer section img {
+  max-width: 50px;
+  margin: 5px;
+}
+mark {
+  background-color: pink;
+  color: black;
+}
+input[type="submit"] {
+  background-color: #c8a2c8;
+  color: #310a6c;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+input[type="submit"]:hover {
+  background-color: darkslateblue;
+}
+h2 {
+  color: white;
+  text-align: center end;
+}
