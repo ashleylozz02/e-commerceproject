@@ -44,7 +44,7 @@ a:hover {
 }
 .checkbtn {
   font-size: 30px;
-  color: #000;
+  color: #fff;
   float: right;
   line-height: 80px;
   margin-right: 40 px;
@@ -236,4 +236,17 @@ h2 {
 mark {
   background-color: #c8a2c8;
   color: black;
+}
+body {
+  /* extra Small Devices, Tablets */
+  @media only screen and (min-width: 360px) {
+  }
+
+  /* small Devices, Desktops */
+  @media only screen and (min-width: 361px) and (max-width: 481px) {
+  }
+
+  /* medium Devices, Wide Screens */
+  @media only screen and (min-width: 481px) and (max-width: 481px) {
+  }
 }
